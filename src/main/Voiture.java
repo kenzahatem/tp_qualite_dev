@@ -1,7 +1,12 @@
 public class Voiture {
     private String marque ;
-    private int prix ;
+    private double prix ;
 
+    public Voiture(){}
+    public Voiture(String m , double p){
+        this.marque = m ;
+        this.prix = p ;
+    }
     public String getMarque() {
         return marque;
     }
@@ -14,7 +19,7 @@ public class Voiture {
                 '}';
     }
 
-    public int getPrix() {
+    public double getPrix() {
         return prix;
     }
 
@@ -22,14 +27,11 @@ public class Voiture {
         this.marque = marque;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(double prix) {
         this.prix = prix;
     }
 
-    public Voiture(String m , int p){
-        this.marque = m ;
-        this.prix = p ;
-    }
+
 
 
 }
