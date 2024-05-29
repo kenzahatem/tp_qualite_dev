@@ -7,6 +7,7 @@ public class VoitureTest {
 
     @Test
     void when_getmarque_should_return_correct_marque() {
+        //token : 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
         Voiture v1 = new Voiture("Volkswagen" , 100);
         String expectedMarque = "Volkswagen";
         String marque = v1.getMarque() ;
@@ -16,7 +17,7 @@ public class VoitureTest {
     @Test
     void testToString() {
         Voiture v2 = new Voiture("Porsche" , 300);
-        System.out.println(v2);
+        //System.out.println(v2);
     }
 
     @Test
