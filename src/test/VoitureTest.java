@@ -17,7 +17,9 @@ public class VoitureTest {
     @Test
     void testToString() {
         Voiture v2 = new Voiture("Porsche" , 300);
-        //System.out.println(v2);
+        String exectedString = "Voiture{marque='Porsche', prix=300.0}" ;
+        String ReturnedStatement = v2.toString() ;
+        Assertions.assertEquals(ReturnedStatement, exectedString , "Doit etre " + exectedString);
     }
 
     @Test
@@ -25,7 +27,7 @@ public class VoitureTest {
         Voiture v1 = new Voiture("Volkswagen" , 100);
         double expectedPrice = 100 ;
         double price = v1.getPrix() ;
-        Assertions.assertEquals(price, expectedPrice , "Doit etre " + expectedPrice); ;
+        Assertions.assertEquals(price, expectedPrice , "Doit etre " + expectedPrice);
     }
 
     @Test
