@@ -16,7 +16,7 @@ public class ServiceTest {
          **/
         Voiture v1 = new Voiture("Volkswagen" , 100);
         for(int i=0  ; i<5 ; i++) {
-            v1.setPrix(v1.getPrix()+100);
+            v1.setPrix(v1.getPrix());
             s1.ajouter(v1)  ;
             System.out.println("ajout" + i) ;
         }
