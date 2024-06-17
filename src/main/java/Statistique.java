@@ -8,7 +8,7 @@ public interface Statistique {
      * @return le prix des voitures
      * @throws ArithmeticException s'il n'y a pas de voiture
      */
-    public int prix() throws ArithmeticException;
+    public double prix() throws ArithmeticException;
 
 }
 
